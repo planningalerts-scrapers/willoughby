@@ -17,7 +17,7 @@ response = br.open(preurl)
 
 br.select_form(name='aspnetForm')
 br.form.set_all_readonly(False)
-br['mDataGrid:Column0:Property'] = ['ctl00$MainBodyContent$mDataList$ctl00$mDataGrid$ctl02$ctl00']
+br['mDataGrid:Column0:Property'] = ['ctl00$MainBodyContent$mDataList$ctl01$mDataGrid$ctl02$ctl00']
 response = br.submit(name='ctl00$MainBodyContent$mContinueButton')
 
 # After much mucking about, it turns out submitting a blank search gives you

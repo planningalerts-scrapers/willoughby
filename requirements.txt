@@ -1,0 +1,4 @@
+scraperwiki
+mechanize
+cssselect
+lxml
