@@ -1,4 +1,0 @@
-scraperwiki
-mechanize
-cssselect
-lxml

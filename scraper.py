@@ -8,7 +8,7 @@ import re
 
 # Session required to do anything, so the best we can do is start and send people here:
 preurl = "https://epathway.willoughby.nsw.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx"
-commenturl = "mailto:email@willoughby.nsw.gov.au";
+commenturl = "mailto:email@willoughby.nsw.gov.au"
 
 br = mechanize.Browser()
 
@@ -66,7 +66,7 @@ rows = root.cssselect('table.ContentPanel tr') # get all the <tr> tags
 <td>&nbsp;</td>
 </tr>"""
 def all_text(cell):
-    return lxml.html.tostring(cell, method="text", encoding=unicode)
+    return lxml.html.tostring(cell, method="text", encoding="unicode")
 
 for row in rows[1:]:
     #print lxml.html.tostring(row) # the full HTML tag
