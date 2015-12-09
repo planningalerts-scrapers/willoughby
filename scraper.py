@@ -72,16 +72,18 @@ for row in rows[1:]:
     #print lxml.html.tostring(row) # the full HTML tag
 
     cells = row.cssselect("td")
-#    print cells
-#    for cell in cells:
-#        print lxml.html.tostring(cell, method="text", encoding=unicode)
+
+    # UNCOMMENT FOR DEBUGGING
+    #print cells
+    #for cell in cells:
+    #    print lxml.html.tostring(cell, method="text", encoding=unicode)
         
     council_reference = all_text(cells[0])
     if council_reference == "Not on file":
         continue
     address = all_text(cells[2])
     description = all_text(cells[4])
-    date_received = time.strftime('%Y-%m-%d', time.strptime(all_text(cells[1]), '%d/%m/%Y'))
+    date_received = time.strftime('%Y-%m-%d', time.strptime(all_text(cells[2]), '%d/%m/%Y'))
     record = {
         'info_url': preurl,
         'comment_url': commenturl,
