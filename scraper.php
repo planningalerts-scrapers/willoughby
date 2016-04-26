@@ -1,5 +1,5 @@
 <?php
-# Great Lakes Council scraper - ePathway
+# Willoughby Council scraper - ePathway
 require 'scraperwiki.php'; 
 require 'simple_html_dom.php';
 date_default_timezone_set('Australia/Sydney');
@@ -70,11 +70,8 @@ foreach ($dataset as $record) {
     $date_received = "$date_received[2]-$date_received[1]-$date_received[0]";
     $date_received = date('Y-m-d', strtotime($date_received));
     
-    echo $record->find('div')->plaintext;
-    
     $address   = preg_replace('/\s+/', ' ', trim(html_entity_decode($record->find('div', 2)->plaintext)));
     $address   = rtrim($address, ".");
-    $address   = $address . ", Australia";
 
     # Put all information in an array
     $application = array (
