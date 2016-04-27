@@ -46,7 +46,7 @@ $term_url = "https://epathway.willoughby.nsw.gov.au/ePathway/Production/Web/Gene
 $user_agent = "User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) PlanningAlerts.org.au";
 
 $da_page = $url_base . "EnquirySummaryView.aspx";
-$comment_base = "mailto:email@willoughby.nsw.gov.au?subject=Development Application ";
+$comment_base = "mailto:email@willoughby.nsw.gov.au?subject=Development Application - ";
 
 $cookies = accept_terms_get_cookies($term_url, "Next", array('mDataGrid:Column0:Property' => 'ctl00$MainBodyContent$mDataList$ctl01$mDataGrid$ctl02$ctl00'));
 
@@ -79,7 +79,7 @@ foreach ($dataset as $record) {
         'address'           => $address,
         'description'       => preg_replace('/\s+/', ' ', trim(html_entity_decode($record->find('span', 1)->plaintext))),
         'info_url'          => $term_url,
-        'comment_url'       => $comment_base . trim($record->find('a',0)->plaintext),
+        'comment_url'       => $comment_base . trim(html_entity_decode($record->find('div',1)->plaintext)),
         'date_scraped'      => date('Y-m-d'),
         'date_received'     => $date_received
     );
