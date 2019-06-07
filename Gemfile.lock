@@ -7,6 +7,14 @@ GIT
       httpclient
       sqlite_magic
 
+GIT
+  remote: https://github.com/planningalerts-scrapers/icon_scraper.git
+  revision: 01373b96a1f8e9fc9a8169194eff3432d2317c65
+  specs:
+    icon_scraper (0.1.0)
+      mechanize
+      scraperwiki
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,7 +68,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mechanize
+  icon_scraper!
   scraperwiki!
   timecop
   vcr
