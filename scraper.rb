@@ -10,6 +10,5 @@ IconScraper.scrape_with_params(
     "tvpa", "tvpa 2", "tvpa r"
   ]
 ) do |record|
-  record["info_url"] = record["info_url"].downcase
   IconScraper.save(record)
 end
