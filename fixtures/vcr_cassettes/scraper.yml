@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://eplanning.willoughby.nsw.gov.au/pages/xc.track/searchapplication.aspx?d=last90days&k=lodgementdate&o=xml&t=da01,da01a,da02a,da03,da05,da06,da07,da10,s96,cc01a,cc01b,cc03,cc04,cd01a,cd01b,cd02,cd04,bcertu,bcertr,bcertc,tvpa,tvpa%202,tvpa%20r
+    uri: https://eplanning.willoughby.nsw.gov.au/pages/xc.track/SearchApplication.aspx
     body:
       encoding: US-ASCII
       string: ''
@@ -25,6 +25,520 @@ http_interactions:
       - '300'
   response:
     status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Location:
+      - "/Common/Common/terms.aspx"
+      Set-Cookie:
+      - ASP.NET_SessionId=ykbf3uncwein2bciefsmi1s2; path=/; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Mon, 10 Jun 2019 06:17:48 GMT
+      Content-Length:
+      - '142'
+    body:
+      encoding: UTF-8
+      string: "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+        moved to <a href=\"/Common/Common/terms.aspx\">here</a>.</h2>\r\n</body></html>\r\n"
+    http_version: 
+  recorded_at: Tue, 14 May 2019 14:00:00 GMT
+- request:
+    method: get
+    uri: https://eplanning.willoughby.nsw.gov.au/Common/Common/terms.aspx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - ASP.NET_SessionId=ykbf3uncwein2bciefsmi1s2
+      Host:
+      - eplanning.willoughby.nsw.gov.au
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Mon, 10 Jun 2019 06:17:48 GMT
+      Content-Length:
+      - '15912'
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head
+        id=\"ctl00_Head1\"><title>\r\n\tTerms and Conditions\r\n</title><meta http-equiv=\"Expires\"
+        content=\"0\" /><meta http-equiv=\"Cache-Control\" content=\"no-cache\" /><meta
+        http-equiv=\"Pragma\" content=\"no-cache\" /><link href=\"../../favicon.ico\"
+        type=\"image/x-icon\" rel=\"icon\" /><link href=\"../../favicon.ico\" type=\"image/x-icon\"
+        rel=\"shortcut icon\" /><link href=\"../../HttpCombiner.ashx?s=IconCss&amp;t=text/css\"
+        type=\"text/css\" rel=\"Stylesheet\" media=\"all\" />\r\n    <base target=\"_top\"
+        />\r\n\r\n    <!-- Conditional Queries to load the Formatted Lists CSS files
+        -->\r\n    <!--[if lt IE 8]>\r\n        <link type=\"text/css\" href=\"../../App_Themes/Icon/IE7.css\"
+        rel=\"Stylesheet\" />\r\n    <![endif]-->\r\n\r\n    <!--[if gt IE 7]>\r\n\t
+        \   <link type=\"text/css\" href=\"../../App_Themes/Icon/FormattedLists.css\"
+        rel=\"Stylesheet\" />\r\n    <![endif]-->\r\n\r\n    <!--[if !IE]><!-->\r\n
+        \   <link type=\"text/css\" href=\"../../App_Themes/Icon/FormattedLists.css\"
+        rel=\"Stylesheet\" />\r\n    <!--<![endif]-->\r\n\r\n    <style type='text/css'></style><meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" /><link href=\"../../App_Themes/Default/Default.css\"
+        type=\"text/css\" rel=\"stylesheet\" /><link href=\"../../App_Themes/Default/User.css\"
+        type=\"text/css\" rel=\"stylesheet\" /></head>\r\n<body>\r\n    <form method=\"post\"
+        action=\"./terms.aspx\" id=\"aspnetForm\" role=\"form\" autocomplete=\"off\">\r\n<input
+        type=\"hidden\" name=\"ctl00_rcss_TSSM\" id=\"ctl00_rcss_TSSM\" value=\"\"
+        />\r\n<input type=\"hidden\" name=\"ctl00_script_TSM\" id=\"ctl00_script_TSM\"
+        value=\"\" />\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\"
+        value=\"/wEPDwUKMTQ2MzgzODU5OQ9kFgJmD2QWAgIDD2QWBAIEDxYCHgRUZXh0ZWQCCA9kFgICAQ9kFgQCAQ8WAh8ABfEaPGgxIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij5ESVNDTEFJTUVSIDwvaDE+CjxwPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEzcHg7Ij48c3Ryb25nPklmIHlvdSBhY2Nlc3MgdGhpcyB3ZWJzaXRlIHlvdSB3aWxsIGJlIHRha2VuIHRvIGhhdmUgYWdyZWVkIHRvIHRoZSBmb2xsb3dpbmcgVGVybXMgYW5kIENvbmRpdGlvbnM6Jm5ic3A7PC9zdHJvbmc+PC9zcGFuPjwvcD4KPGJyIC8+ClRoZSBjb250ZW50cyBvZiB0aGlzIHdlYnNpdGUgKHdoaWNoIGluY2x1ZGVzIGRvd25sb2FkYWJsZSBtYXRlcmlhbCkgYXJlIHN1YmplY3QgdG8gY29weXJpZ2h0IGFuZCBhcmUgcHJvdGVjdGVkIGJ5IGxhd3Mgb2YgQXVzdHJhbGlhIGFuZCBvdGhlciBjb3VudHJpZXMgdGhyb3VnaCBpbnRlcm5hdGlvbmFsIHRyZWF0aWVzLiA8YnIgLz4KPGJyIC8+CkNvdW5jaWwgZ3JhbnRzIHlvdSBhIG5vbi1leGNsdXNpdmUgbGljZW5jZSB0byByZXByb2R1Y2UgdGhlIGNvbnRlbnRzIG9mIHRoaXMgd2Vic2l0ZSBpbiB5b3VyIHdlYiBicm93c2VyIChhbmQgaW4gYW55IGNhY2hlIGZpbGUgcHJvZHVjZWQgYnkgeW91ciB3ZWIgYnJvd3NlcikgZm9yIHRoZSBzb2xlIHB1cnBvc2Ugb2Ygdmlld2luZyB0aGUgY29udGVudC4gQ291bmNpbCByZXNlcnZlcyBhbGwgb3RoZXIgcmlnaHRzLiA8YnIgLz4KPGJyIC8+ClRoZSBpbmZvcm1hdGlvbiBwcm92aWRlZCBvbiB0aGlzIHdlYnNpdGUgaXMgdG8gYXNzaXN0IGN1c3RvbWVycyBpbiB0cmFja2luZyB0aGUgcHJvZ3Jlc3Mgb2YgQXBwbGljYXRpb25zLiBJdCByZXByZXNlbnRzIGtleSBtaWxlc3RvbmVzIGluIHRoZSBBcHBsaWNhdGlvbiBwcm9jZXNzIGJ1dCBpcyBub3QgYSBkZXRhaWxlZCBoaXN0b3J5LiBQZXJzb25zIHdpc2hpbmcgdG8gY29uZmlybSBpbmZvcm1hdGlvbiBpbiBkZXRhaWwgc2hvdWxkIGNvbnRhY3QgQ291bmNpbCB2aWEgZWl0aGVyIHRoZSBlbWFpbCBmYWNpbGl0eSBvciBpbiB3cml0aW5nIGluIG9yZGVyIHRvIG9idGFpbiBhIHdyaXR0ZW4gcmVzcG9uc2UuIDxiciAvPgo8YnIgLz4KVGhlIGluZm9ybWF0aW9uIHByb3ZpZGVkIGJ5IHRoZSBTZXJ2aWNlIG1heSBjb250YWluIGluYWNjdXJhY2llcyBvciBlcnJvcnMuIENvdW5jaWwgbWFrZXMgbm8gd2FycmFudGllcyBvciByZXByZXNlbnRhdGlvbnMgcmVnYXJkaW5nIHRoZSBjdXJyZW5jeSwgcXVhbGl0eSwgYWNjdXJhY3ksIG1lcmNoYW50YWJpbGl0eSBvciBmaXRuZXNzIGZvciB0aGUgcHVycG9zZSBvZiB0aGUgaW5mb3JtYXRpb24gcHJvdmlkZWQgYnkgdGhlIFNlcnZpY2UsIG9yIHRoYXQgdGhlIFNlcnZpY2UgaXMgZnJlZSBmcm9tIGFueSB2aXJ1cyBvciBvdGhlciBkZWZlY3QuIEl0IGlzIHlvdXIgc29sZSByZXNwb25zaWJpbGl0eSB0byBtYWtlIHlvdXIgb3duIGFzc2Vzc21lbnQgb2YgdGhlIGluZm9ybWF0aW9uIHByb3ZpZGVkIGJ5IHRoZSBTZXJ2aWNlLjxiciAvPgo8YnIgLz4KQ291bmNpbCB3aWxsIG5vdCBpbiBhbnkgY2lyY3Vtc3RhbmNlcyBiZSBsaWFibGUgdG8geW91IGZvciBhbnkgbG9zcyBvciBkYW1hZ2UgKGluY2x1ZGluZyB3aXRob3V0IGxpbWl0YXRpb24sIGNvbnNlcXVlbnRpYWwgbG9zcyBvciBkYW1hZ2UpIGhvd2V2ZXIgY2F1c2VkIGFuZCB3aGV0aGVyIGFyaXNpbmcgZGlyZWN0bHkgb3IgaW5kaXJlY3RseSBmcm9tIHlvdXIgdXNlIG9mIHRoZSBpbmZvcm1hdGlvbiBwcm92aWRlZCBieSB0aGUgU2VydmljZS4gPGJyIC8+CjxiciAvPgpZb3UgYWNrbm93bGVkZ2UgdGhhdCBiZWNhdXNlIG9mIHRoZSBuYXR1cmUgb2YgdGhlIGludGVybmV0IGFuZCB0aGlyZCBwYXJ0eSBkZXBlbmRlbmNpZXMsIENvdW5jaWwgZG9lcyBub3Qgd2FycmFudCB0aGF0IGFjY2VzcyB0byBvciB1c2Ugb2YgdGhlIFNlcnZpY2Ugd2lsbCBiZSBjb250aW51b3VzIG9yIHVuaW50ZXJydXB0ZWQuIEZyb20gdGltZSB0byB0aW1lIHRoZSBTZXJ2aWNlIG1heSBub3QgYmUgYXZhaWxhYmxlIGR1ZSB0byB1cGdyYWRlcyBvciBtYWludGVuYW5jZS4pPGJyIC8+CkNvdW5jaWwgcmVzZXJ2ZXMgdGhlIHJpZ2h0IHRvIGNoYW5nZSBhbnkgYXNwZWN0IG9mIHRoZSBTZXJ2aWNlLCBpbmNsdWRpbmcgbW9kaWZ5aW5nLCBzdXNwZW5kaW5nLCByZXBsYWNpbmcgb3IgdGVybWluYXRpbmcgdGhlIFNlcnZpY2UgYXMgd2VsbCBhcyBpbXBvc2luZyBhbnkgZmVlIGZvciBhY2Nlc3MgdG8gdGhlIFNlcnZpY2UuIENvdW5jaWwgd2lsbCBoYXZlIG5vIGxpYWJpbGl0eSB0byB5b3UgaWYgdGhlIFNlcnZpY2UgaXMgbW9kaWZpZWQsIHN1c3BlbmRlZCwgcmVwbGFjZWQgb3IgdGVybWluYXRlZC4gWW91IGFncmVlIHRvIHdhaXZlIGFsbCByaWdodHMgeW91IG1heSBoYXZlIGFnYWluc3QgQ291bmNpbCBpbiByZXNwZWN0IG9mIGFueSBzdWNoIGFjdGlvbiB0YWtlbiBieSBDb3VuY2lsLjxiciAvPgo8YnIgLz4KWW91IGFncmVlIG5vdCB0byBpbnRlcmZlcmUgd2l0aCB0aGUgcHJvcGVyIHdvcmtpbmcgb2YgdGhlIFNlcnZpY2UuIFlvdSBhZ3JlZSBub3QgdG8gZG8gYW55dGhpbmcgdGhhdCBpbXBvc2VzIGFuIHVucmVhc29uYWJsZSBvciBkaXNwcm9wb3J0aW9uYXRlbHkgbGFyZ2UgbG9hZCBvbiB0aGUgU2VydmljZSwgb3IgdXNlIHRoZSBTZXJ2aWNlIG90aGVyIHRoYW4gdG8gZ2FpbiBpbmZvcm1hdGlvbi4gPGJyIC8+CjxiciAvPgo8c3Bhbj5BbGwgbWF0dGVycyByZWxhdGluZyB0byB0aGlzIHdlYnNpdGUgYXJlIGdvdmVybmVkIGJ5IHRoZSBsYXdzIG9mIHRoZSBTdGF0ZSBvZiBOU1csIEF1c3RyYWxpYS4gPC9zcGFuPkJ5IGFjY2Vzc2luZyB0aGlzIGluZm9ybWF0aW9uIEkgcmVxdWVzdCB0byBkbyBzbyB1bmRlciB0aGUgR292ZXJubWVudCBJbmZvcm1hdGlvbiAoUHVibGljIEFjY2VzcykgQWN0IDIwMDkgKEdJUEEgQWN0KSBhbmQgSSB1bmRlcnN0YW5kIHRoYXQgQ291bmNpbCBpcyBtYWtpbmcgdGhlIGluZm9ybWF0aW9uIGF2YWlsYWJsZSB1bmRlciB0aGUgcHJvdmlzaW9ucyBvZiB0aGUgR0lQQSBBY3QuIDxiciAvPgo8YnIgLz4KUHJpdmFjeSBOb3RpZmljYXRpb24gLSBJbmZvcm1hdGlvbiBwcm92aWRlZCB0byBDb3VuY2lsIGluIGNvcnJlc3BvbmRlbmNlLCBzdWJtaXNzaW9ucyBvciByZXF1ZXN0cyAodmVyYmFsLCBlbGVjdHJvbmljIG9yIHdyaXR0ZW4pLCBpbmNsdWRpbmcgcGVyc29uYWwgaW5mb3JtYXRpb24gc3VjaCBhcyB5b3VyIG5hbWUgYW5kIGFkZHJlc3MsIG1heSBiZSBtYWRlIHB1YmxpY2x5IGF2YWlsYWJsZSwgaW5jbHVkaW5nIHZpYSBDb3VuY2lsIHdlYnNpdGUsIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgR292ZXJubWVudCBJbmZvcm1hdGlvbiAoUHVibGljIEFjY2VzcykgQWN0IChHSVBBIEFjdCkgMjAwOS4gQ291bmNpbCByZXNlcnZlcyB0aGUgcmlnaHQgdG8gcmVwcm9kdWNlIGluIHdob2xlIG9yIGluIHBhcnQgYW55IGNvcnJlc3BvbmRlbmNlIG9yIHN1Ym1pc3Npb24uJm5ic3A7ZAIJDxYCHwBlZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUaY3RsMDAkY3RNYWluJGNoa0FncmVlJGNoazGNmhzo+YGNHNog3bdr8Jbf6DdgPQ==\"
+        />\r\n\r\n\r\n<script src=\"/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_script_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen%3ad469afcf-7bb2-42b0-a0c2-3f036d3832f2%3aea597d4b\"
+        type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif
+        (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework
+        failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\"
+        id=\"__VIEWSTATEGENERATOR\" value=\"A8DC4E82\" />\r\n<input type=\"hidden\"
+        name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEdAATJB0NxPvcVWf/FLQLibO1VOcBhpQsJgyMjpoz897IvWkTdyBz/e/CcgfJ5zxj4jwg/VxUvaVtQChmSC3DOB0MpRrO5C68mFmt0JepQoG0l9w66+GI=\"
+        />\r\n        \r\n        <script type=\"text/javascript\" src=\"../../HttpCombiner.ashx?s=IconJs&t=text/javascript\"></script>\r\n
+        \       <script type=\"text/javascript\">\r\n            jGrowlPosition =
+        \"top-right\";\r\n        </script>\r\n        <div id=\"ctl00_throbber_throbber\"
+        class=\"globalThrobber\">\r\n    <img class=\"throbber\" src=\"../../Common/Common/Image.aspx?rid=throbber.gif\"
+        alt=\"Loading...\" />\r\n</div>\r\n\r\n<script type=\"text/javascript\">\r\n
+        \   $(document).ready(function(){        \r\n        $('.globalThrobber')\r\n
+        \           .ajaxStart(function() {\r\n                if ($('.throbber:visible').length
+        == 0) {\r\n                    $(this).show();\r\n                }\r\n            })
+        \ \r\n            .ajaxStop(function() {\r\n                $(this).hide();\r\n
+        \           })\r\n        ;\r\n    });\r\n</script>\r\n        \r\n\r\n<script
+        type=\"text/javascript\">\r\n    /*This script is designed to alert the user
+        when session timout is reached and redirect to home page*/\r\n    var timer1;\r\n
+        \   window.clearTimeout(timer1);\r\n    var $dialog;\r\n    $(document).ready(function()\r\n
+        \   {\r\n        $dialog = $('<div></div>').html('Your session has expired,
+        you will now be redirected to the home page.').dialog(\r\n        {\r\n            buttons:\r\n
+        \           {   \r\n                'Ok': function()\r\n                {\r\n
+        \                   $(this).dialog('close');\r\n                    window.location
+        = 'https://eplanning.willoughby.nsw.gov.au/Pages/XC.Home/Home.aspx';\r\n                }\r\n
+        \           },\r\n            show: \"fade\",\r\n            hide: \"fade\",\r\n
+        \           resizable: false,\r\n            modal: true,\r\n            autoOpen:
+        false,\r\n            title:  'Session Expired'\r\n        });\r\n    });\r\n
+        \   var sessionTimeout = '10799000';\r\n    function doTimeout()\r\n    {\r\n
+        \       $dialog.dialog('open');\r\n        return false;\r\n    }\r\n    timer1
+        = window.setTimeout('doTimeout()',sessionTimeout);\r\n</script>\r\n        <div
+        id=\"docf\">\r\n            <div id=\"hd\" role=\"banner\">\r\n\r\n                <img
+        src=\"../../Images/WCC/eplanningPortal.jpg\" alt=\"Willoughby Logo\" style=\"height:
+        100px;\" id=\"adminlogo\" />\r\n\r\n                <div class=\"clear adminclear\"></div>\r\n
+        \               <div id=\"mainline\">\r\n                    <div class=\"containerLeft
+        adminbanner splitterLeftMaster noOverflow\">\r\n                        \r\n
+        \                       <div style=\"margin-top: 5px; padding: 3px; padding-left:
+        12px;\" id=\"adminpage\">\r\n                            \r\n                        </div>\r\n
+        \                   </div>\r\n                    <div class=\"containerRight
+        adminbanner splitterRightMaster noOverflow\">\r\n                        \r\n
+        \                   </div>\r\n                </div>\r\n                <div
+        class=\"clear\"></div>\r\n            </div>\r\n            <div class=\"clear\"></div>\r\n
+        \           <div id=\"bd\" role=\"main\">\r\n                <div id=\"main\">\r\n
+        \                   <div class=\"containerLeft\">\r\n                        <div
+        class=\"containerInner\">\r\n                            <div class=\"padded\">\r\n
+        \                               \r\n                            </div>\r\n
+        \                       </div>\r\n                    </div>\r\n                    <div
+        class=\"containerRight\">\r\n                        <div class=\"containerInner\">\r\n
+        \                           <div class=\"padded\">\r\n                                \r\n
+        \                               \r\n    <div id=\"ctl00_ctMain_main\">\r\n
+        \       <h1 style=\"text-align: center;\">DISCLAIMER </h1>\n<p><span style=\"font-size:
+        13px;\"><strong>If you access this website you will be taken to have agreed
+        to the following Terms and Conditions:&nbsp;</strong></span></p>\n<br />\nThe
+        contents of this website (which includes downloadable material) are subject
+        to copyright and are protected by laws of Australia and other countries through
+        international treaties. <br />\n<br />\nCouncil grants you a non-exclusive
+        licence to reproduce the contents of this website in your web browser (and
+        in any cache file produced by your web browser) for the sole purpose of viewing
+        the content. Council reserves all other rights. <br />\n<br />\nThe information
+        provided on this website is to assist customers in tracking the progress of
+        Applications. It represents key milestones in the Application process but
+        is not a detailed history. Persons wishing to confirm information in detail
+        should contact Council via either the email facility or in writing in order
+        to obtain a written response. <br />\n<br />\nThe information provided by
+        the Service may contain inaccuracies or errors. Council makes no warranties
+        or representations regarding the currency, quality, accuracy, merchantability
+        or fitness for the purpose of the information provided by the Service, or
+        that the Service is free from any virus or other defect. It is your sole responsibility
+        to make your own assessment of the information provided by the Service.<br
+        />\n<br />\nCouncil will not in any circumstances be liable to you for any
+        loss or damage (including without limitation, consequential loss or damage)
+        however caused and whether arising directly or indirectly from your use of
+        the information provided by the Service. <br />\n<br />\nYou acknowledge that
+        because of the nature of the internet and third party dependencies, Council
+        does not warrant that access to or use of the Service will be continuous or
+        uninterrupted. From time to time the Service may not be available due to upgrades
+        or maintenance.)<br />\nCouncil reserves the right to change any aspect of
+        the Service, including modifying, suspending, replacing or terminating the
+        Service as well as imposing any fee for access to the Service. Council will
+        have no liability to you if the Service is modified, suspended, replaced or
+        terminated. You agree to waive all rights you may have against Council in
+        respect of any such action taken by Council.<br />\n<br />\nYou agree not
+        to interfere with the proper working of the Service. You agree not to do anything
+        that imposes an unreasonable or disproportionately large load on the Service,
+        or use the Service other than to gain information. <br />\n<br />\n<span>All
+        matters relating to this website are governed by the laws of the State of
+        NSW, Australia. </span>By accessing this information I request to do so under
+        the Government Information (Public Access) Act 2009 (GIPA Act) and I understand
+        that Council is making the information available under the provisions of the
+        GIPA Act. <br />\n<br />\nPrivacy Notification - Information provided to Council
+        in correspondence, submissions or requests (verbal, electronic or written),
+        including personal information such as your name and address, may be made
+        publicly available, including via Council website, in accordance with the
+        Government Information (Public Access) Act (GIPA Act) 2009. Council reserves
+        the right to reproduce in whole or in part any correspondence or submission.&nbsp;\r\n
+        \       <span id=\"ctl00_ctMain_chkAgree\"><br/><input id=\"ctl00_ctMain_chkAgree_chk1\"
+        type=\"checkbox\" name=\"ctl00$ctMain$chkAgree$chk1\" />I acknowledge that
+        I have read and understood the terms and agreements that enable me to enter
+        this web site.<span></span></span><br />\r\n        <input type=\"submit\"
+        name=\"ctl00$ctMain$BtnAgree\" value=\"I Agree\" id=\"ctl00_ctMain_BtnAgree\"
+        class=\"buttonText buttonAdd\" />\r\n        <input type=\"submit\" name=\"ctl00$ctMain$BtnDisagree\"
+        value=\"I Disagree\" id=\"ctl00_ctMain_BtnDisagree\" class=\"buttonText buttonDelete\"
+        />\r\n        \r\n    </div>\r\n\r\n                            </div>\r\n
+        \                       </div>\r\n                    </div>\r\n                </div>\r\n
+        \           </div>\r\n            \r\n\r\n\r\n            <div class=\"footer\"
+        style=\"padding: 20px; color: #FFF;\">\r\n                <div class=\"container\"
+        style=\"padding-left: 15px; padding-right: 15px;\">\r\n                    <strong>&copy;
+        Copyright <a href=\"http://www.willoughby.nsw.gov.au/\" target=\"_blank\">Willoughby
+        City Council</a> - ABN</strong> 47 974 826 099\r\n             <div style=\"float:
+        right;\">\r\n                 <a href=\"http://www.willoughby.nsw.gov.au/legal\"
+        target=\"_blank\">Legal</a> |\r\n             <a href=\"mailto:email@willoughby.nsw.gov.au\"
+        target=\"_blank\">Email</a>\r\n             </div>\r\n                </div>\r\n
+        \           </div>\r\n\r\n        </div>\r\n        <script type=\"text/javascript\"
+        src=\"../../Common/Javascript/final.js\"></script>\r\n        <script type=\"text/javascript\"
+        src=\"../../Common/User/User.js\"></script>\r\n        <script type=\"text/javascript\">\r\n
+        \           $(document).ready(function () {\r\n                document.title
+        = document.title + ' - TechnologyOne';\r\n            });\r\n        </script>\r\n
+        \   </form>\r\n</body>\r\n</html>"
+    http_version: 
+  recorded_at: Tue, 14 May 2019 14:00:00 GMT
+- request:
+    method: post
+    uri: https://eplanning.willoughby.nsw.gov.au/Common/Common/terms.aspx
+    body:
+      encoding: UTF-8
+      string: ctl00_rcss_TSSM=&ctl00_script_TSM=&__VIEWSTATE=%2FwEPDwUKMTQ2MzgzODU5OQ9kFgJmD2QWAgIDD2QWBAIEDxYCHgRUZXh0ZWQCCA9kFgICAQ9kFgQCAQ8WAh8ABfEaPGgxIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij5ESVNDTEFJTUVSIDwvaDE%2BCjxwPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEzcHg7Ij48c3Ryb25nPklmIHlvdSBhY2Nlc3MgdGhpcyB3ZWJzaXRlIHlvdSB3aWxsIGJlIHRha2VuIHRvIGhhdmUgYWdyZWVkIHRvIHRoZSBmb2xsb3dpbmcgVGVybXMgYW5kIENvbmRpdGlvbnM6Jm5ic3A7PC9zdHJvbmc%2BPC9zcGFuPjwvcD4KPGJyIC8%2BClRoZSBjb250ZW50cyBvZiB0aGlzIHdlYnNpdGUgKHdoaWNoIGluY2x1ZGVzIGRvd25sb2FkYWJsZSBtYXRlcmlhbCkgYXJlIHN1YmplY3QgdG8gY29weXJpZ2h0IGFuZCBhcmUgcHJvdGVjdGVkIGJ5IGxhd3Mgb2YgQXVzdHJhbGlhIGFuZCBvdGhlciBjb3VudHJpZXMgdGhyb3VnaCBpbnRlcm5hdGlvbmFsIHRyZWF0aWVzLiA8YnIgLz4KPGJyIC8%2BCkNvdW5jaWwgZ3JhbnRzIHlvdSBhIG5vbi1leGNsdXNpdmUgbGljZW5jZSB0byByZXByb2R1Y2UgdGhlIGNvbnRlbnRzIG9mIHRoaXMgd2Vic2l0ZSBpbiB5b3VyIHdlYiBicm93c2VyIChhbmQgaW4gYW55IGNhY2hlIGZpbGUgcHJvZHVjZWQgYnkgeW91ciB3ZWIgYnJvd3NlcikgZm9yIHRoZSBzb2xlIHB1cnBvc2Ugb2Ygdmlld2luZyB0aGUgY29udGVudC4gQ291bmNpbCByZXNlcnZlcyBhbGwgb3RoZXIgcmlnaHRzLiA8YnIgLz4KPGJyIC8%2BClRoZSBpbmZvcm1hdGlvbiBwcm92aWRlZCBvbiB0aGlzIHdlYnNpdGUgaXMgdG8gYXNzaXN0IGN1c3RvbWVycyBpbiB0cmFja2luZyB0aGUgcHJvZ3Jlc3Mgb2YgQXBwbGljYXRpb25zLiBJdCByZXByZXNlbnRzIGtleSBtaWxlc3RvbmVzIGluIHRoZSBBcHBsaWNhdGlvbiBwcm9jZXNzIGJ1dCBpcyBub3QgYSBkZXRhaWxlZCBoaXN0b3J5LiBQZXJzb25zIHdpc2hpbmcgdG8gY29uZmlybSBpbmZvcm1hdGlvbiBpbiBkZXRhaWwgc2hvdWxkIGNvbnRhY3QgQ291bmNpbCB2aWEgZWl0aGVyIHRoZSBlbWFpbCBmYWNpbGl0eSBvciBpbiB3cml0aW5nIGluIG9yZGVyIHRvIG9idGFpbiBhIHdyaXR0ZW4gcmVzcG9uc2UuIDxiciAvPgo8YnIgLz4KVGhlIGluZm9ybWF0aW9uIHByb3ZpZGVkIGJ5IHRoZSBTZXJ2aWNlIG1heSBjb250YWluIGluYWNjdXJhY2llcyBvciBlcnJvcnMuIENvdW5jaWwgbWFrZXMgbm8gd2FycmFudGllcyBvciByZXByZXNlbnRhdGlvbnMgcmVnYXJkaW5nIHRoZSBjdXJyZW5jeSwgcXVhbGl0eSwgYWNjdXJhY3ksIG1lcmNoYW50YWJpbGl0eSBvciBmaXRuZXNzIGZvciB0aGUgcHVycG9zZSBvZiB0aGUgaW5mb3JtYXRpb24gcHJvdmlkZWQgYnkgdGhlIFNlcnZpY2UsIG9yIHRoYXQgdGhlIFNlcnZpY2UgaXMgZnJlZSBmcm9tIGFueSB2aXJ1cyBvciBvdGhlciBkZWZlY3QuIEl0IGlzIHlvdXIgc29sZSByZXNwb25zaWJpbGl0eSB0byBtYWtlIHlvdXIgb3duIGFzc2Vzc21lbnQgb2YgdGhlIGluZm9ybWF0aW9uIHByb3ZpZGVkIGJ5IHRoZSBTZXJ2aWNlLjxiciAvPgo8YnIgLz4KQ291bmNpbCB3aWxsIG5vdCBpbiBhbnkgY2lyY3Vtc3RhbmNlcyBiZSBsaWFibGUgdG8geW91IGZvciBhbnkgbG9zcyBvciBkYW1hZ2UgKGluY2x1ZGluZyB3aXRob3V0IGxpbWl0YXRpb24sIGNvbnNlcXVlbnRpYWwgbG9zcyBvciBkYW1hZ2UpIGhvd2V2ZXIgY2F1c2VkIGFuZCB3aGV0aGVyIGFyaXNpbmcgZGlyZWN0bHkgb3IgaW5kaXJlY3RseSBmcm9tIHlvdXIgdXNlIG9mIHRoZSBpbmZvcm1hdGlvbiBwcm92aWRlZCBieSB0aGUgU2VydmljZS4gPGJyIC8%2BCjxiciAvPgpZb3UgYWNrbm93bGVkZ2UgdGhhdCBiZWNhdXNlIG9mIHRoZSBuYXR1cmUgb2YgdGhlIGludGVybmV0IGFuZCB0aGlyZCBwYXJ0eSBkZXBlbmRlbmNpZXMsIENvdW5jaWwgZG9lcyBub3Qgd2FycmFudCB0aGF0IGFjY2VzcyB0byBvciB1c2Ugb2YgdGhlIFNlcnZpY2Ugd2lsbCBiZSBjb250aW51b3VzIG9yIHVuaW50ZXJydXB0ZWQuIEZyb20gdGltZSB0byB0aW1lIHRoZSBTZXJ2aWNlIG1heSBub3QgYmUgYXZhaWxhYmxlIGR1ZSB0byB1cGdyYWRlcyBvciBtYWludGVuYW5jZS4pPGJyIC8%2BCkNvdW5jaWwgcmVzZXJ2ZXMgdGhlIHJpZ2h0IHRvIGNoYW5nZSBhbnkgYXNwZWN0IG9mIHRoZSBTZXJ2aWNlLCBpbmNsdWRpbmcgbW9kaWZ5aW5nLCBzdXNwZW5kaW5nLCByZXBsYWNpbmcgb3IgdGVybWluYXRpbmcgdGhlIFNlcnZpY2UgYXMgd2VsbCBhcyBpbXBvc2luZyBhbnkgZmVlIGZvciBhY2Nlc3MgdG8gdGhlIFNlcnZpY2UuIENvdW5jaWwgd2lsbCBoYXZlIG5vIGxpYWJpbGl0eSB0byB5b3UgaWYgdGhlIFNlcnZpY2UgaXMgbW9kaWZpZWQsIHN1c3BlbmRlZCwgcmVwbGFjZWQgb3IgdGVybWluYXRlZC4gWW91IGFncmVlIHRvIHdhaXZlIGFsbCByaWdodHMgeW91IG1heSBoYXZlIGFnYWluc3QgQ291bmNpbCBpbiByZXNwZWN0IG9mIGFueSBzdWNoIGFjdGlvbiB0YWtlbiBieSBDb3VuY2lsLjxiciAvPgo8YnIgLz4KWW91IGFncmVlIG5vdCB0byBpbnRlcmZlcmUgd2l0aCB0aGUgcHJvcGVyIHdvcmtpbmcgb2YgdGhlIFNlcnZpY2UuIFlvdSBhZ3JlZSBub3QgdG8gZG8gYW55dGhpbmcgdGhhdCBpbXBvc2VzIGFuIHVucmVhc29uYWJsZSBvciBkaXNwcm9wb3J0aW9uYXRlbHkgbGFyZ2UgbG9hZCBvbiB0aGUgU2VydmljZSwgb3IgdXNlIHRoZSBTZXJ2aWNlIG90aGVyIHRoYW4gdG8gZ2FpbiBpbmZvcm1hdGlvbi4gPGJyIC8%2BCjxiciAvPgo8c3Bhbj5BbGwgbWF0dGVycyByZWxhdGluZyB0byB0aGlzIHdlYnNpdGUgYXJlIGdvdmVybmVkIGJ5IHRoZSBsYXdzIG9mIHRoZSBTdGF0ZSBvZiBOU1csIEF1c3RyYWxpYS4gPC9zcGFuPkJ5IGFjY2Vzc2luZyB0aGlzIGluZm9ybWF0aW9uIEkgcmVxdWVzdCB0byBkbyBzbyB1bmRlciB0aGUgR292ZXJubWVudCBJbmZvcm1hdGlvbiAoUHVibGljIEFjY2VzcykgQWN0IDIwMDkgKEdJUEEgQWN0KSBhbmQgSSB1bmRlcnN0YW5kIHRoYXQgQ291bmNpbCBpcyBtYWtpbmcgdGhlIGluZm9ybWF0aW9uIGF2YWlsYWJsZSB1bmRlciB0aGUgcHJvdmlzaW9ucyBvZiB0aGUgR0lQQSBBY3QuIDxiciAvPgo8YnIgLz4KUHJpdmFjeSBOb3RpZmljYXRpb24gLSBJbmZvcm1hdGlvbiBwcm92aWRlZCB0byBDb3VuY2lsIGluIGNvcnJlc3BvbmRlbmNlLCBzdWJtaXNzaW9ucyBvciByZXF1ZXN0cyAodmVyYmFsLCBlbGVjdHJvbmljIG9yIHdyaXR0ZW4pLCBpbmNsdWRpbmcgcGVyc29uYWwgaW5mb3JtYXRpb24gc3VjaCBhcyB5b3VyIG5hbWUgYW5kIGFkZHJlc3MsIG1heSBiZSBtYWRlIHB1YmxpY2x5IGF2YWlsYWJsZSwgaW5jbHVkaW5nIHZpYSBDb3VuY2lsIHdlYnNpdGUsIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgR292ZXJubWVudCBJbmZvcm1hdGlvbiAoUHVibGljIEFjY2VzcykgQWN0IChHSVBBIEFjdCkgMjAwOS4gQ291bmNpbCByZXNlcnZlcyB0aGUgcmlnaHQgdG8gcmVwcm9kdWNlIGluIHdob2xlIG9yIGluIHBhcnQgYW55IGNvcnJlc3BvbmRlbmNlIG9yIHN1Ym1pc3Npb24uJm5ic3A7ZAIJDxYCHwBlZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUaY3RsMDAkY3RNYWluJGNoa0FncmVlJGNoazGNmhzo%2BYGNHNog3bdr8Jbf6DdgPQ%3D%3D&__VIEWSTATEGENERATOR=A8DC4E82&__EVENTVALIDATION=%2FwEdAATJB0NxPvcVWf%2FFLQLibO1VOcBhpQsJgyMjpoz897IvWkTdyBz%2Fe%2FCcgfJ5zxj4jwg%2FVxUvaVtQChmSC3DOB0MpRrO5C68mFmt0JepQoG0l9w66%2BGI%3D&ctl00%24ctMain%24chkAgree%24chk1=on&ctl00%24ctMain%24BtnAgree=I+Agree
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - ASP.NET_SessionId=ykbf3uncwein2bciefsmi1s2
+      Host:
+      - eplanning.willoughby.nsw.gov.au
+      Referer:
+      - https://eplanning.willoughby.nsw.gov.au/Common/Common/terms.aspx
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '5128'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Encoding:
+      - gzip,gzip
+      Location:
+      - https://eplanning.willoughby.nsw.gov.au/pages/xc.track/searchapplication.aspx
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Mon, 10 Jun 2019 06:17:48 GMT
+      Content-Length:
+      - '164'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAEAFWOSw7DIAwF95VyB5QDYCnLinKFnsEhLqYlgILzu32TZtXlexppxrCM0RomHKyRIJHss3+TEzXmhQYD12fgIvo87La5Ge7+MCVZGVQ80evRskipdwAqEVMKyes1xJhnz/2uU121z4vGGQp6qrA5LRO6D1TCyTGWEoNDCTlprGVrLdNEBtDqo6E73fCLONZZ3ty+dWUihcIAAAA=
+    http_version: 
+  recorded_at: Tue, 14 May 2019 14:00:00 GMT
+- request:
+    method: get
+    uri: https://eplanning.willoughby.nsw.gov.au/pages/xc.track/searchapplication.aspx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - ASP.NET_SessionId=ykbf3uncwein2bciefsmi1s2
+      Host:
+      - eplanning.willoughby.nsw.gov.au
+      Referer:
+      - https://eplanning.willoughby.nsw.gov.au/Common/Common/terms.aspx
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Mon, 10 Jun 2019 06:17:48 GMT
+      Content-Length:
+      - '19132'
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head
+        id=\"ctl00_Head1\"><title>\r\n\tFind an Application\r\n</title><meta http-equiv=\"Expires\"
+        content=\"0\" /><meta http-equiv=\"Cache-Control\" content=\"no-cache\" /><meta
+        http-equiv=\"Pragma\" content=\"no-cache\" /><link href=\"../../favicon.ico\"
+        type=\"image/x-icon\" rel=\"icon\" /><link href=\"../../favicon.ico\" type=\"image/x-icon\"
+        rel=\"shortcut icon\" /><link href=\"../../HttpCombiner.ashx?s=IconCss&amp;t=text/css\"
+        type=\"text/css\" rel=\"Stylesheet\" media=\"all\" />\r\n    <base target=\"_top\"
+        />\r\n\r\n    <!-- Conditional Queries to load the Formatted Lists CSS files
+        -->\r\n    <!--[if lt IE 8]>\r\n        <link type=\"text/css\" href=\"../../App_Themes/Icon/IE7.css\"
+        rel=\"Stylesheet\" />\r\n    <![endif]-->\r\n\r\n    <!--[if gt IE 7]>\r\n\t
+        \   <link type=\"text/css\" href=\"../../App_Themes/Icon/FormattedLists.css\"
+        rel=\"Stylesheet\" />\r\n    <![endif]-->\r\n\r\n    <!--[if !IE]><!-->\r\n
+        \   <link type=\"text/css\" href=\"../../App_Themes/Icon/FormattedLists.css\"
+        rel=\"Stylesheet\" />\r\n    <!--<![endif]-->\r\n\r\n    <style type='text/css'></style><meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" /><link href=\"../../App_Themes/Default/Default.css\"
+        type=\"text/css\" rel=\"stylesheet\" /><link href=\"../../App_Themes/Default/User.css\"
+        type=\"text/css\" rel=\"stylesheet\" /></head>\r\n<body>\r\n    <form method=\"post\"
+        action=\"./searchapplication.aspx\" id=\"aspnetForm\" role=\"form\" autocomplete=\"off\">\r\n<input
+        type=\"hidden\" name=\"ctl00_rcss_TSSM\" id=\"ctl00_rcss_TSSM\" value=\"\"
+        />\r\n<input type=\"hidden\" name=\"ctl00_script_TSM\" id=\"ctl00_script_TSM\"
+        value=\"\" />\r\n<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\"
+        value=\"/wEPDwULLTE1OTM3MDQ5NjUPZBYCZg9kFgICAw9kFgQCBA8WAh4EVGV4dAUcPGgzPlNlYXJjaCBBcHBsaWNhdGlvbnM8L2gzPmQCCA9kFgQCAQ9kFgICAQ8PFgIeB1Zpc2libGVnZBYGZg9kFgICAQ8PFgQeBVdpZHRoGwAAAAAAMIFAAQAAAB4EXyFTQgKAAmRkAgEPFgIfAGVkAgIPZBYCZg8PFgQeCENzc0NsYXNzZR8DAgJkFgQCAQ8PFgIfAWhkFgICAw8PFgIfAGVkZAIDDw8WBB8EZR8DAgJkFgQCAw9kFgJmDxYCHwAF9wc8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwOi8vbWFwcy5nb29nbGUuY29tL21hcHMvYXBpL2pzP3NlbnNvcj10cnVlJmxpYnJhcmllcz1nZW9tZXRyeSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9qc2FwaSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL2NsaWVudC9zY3JpcHRzL21hcC8vaWNvbi1tYXAuanMiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii4uLy4uL1BhZ2VzL1hDLlNwYXRpYWwvSmF2YXNjcmlwdC9TcGF0aWFsLmpzIj48L3NjcmlwdD48bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Ii9jbGllbnQvc2NyaXB0cy9tYXAvL2ljb24tbWFwLmNzcyIgbWVkaWE9InNjcmVlbiI+PC9saW5rPjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iLi4vLi4vQXBwX1RoZW1lcy9JY29uL1NwYXRpYWwuY3NzIiBtZWRpYT0ic2NyZWVuIj48L2xpbms+PGRpdiBpZD0ibWFwIiBjbGFzcz0iZW1iZWRkZWQiIHN0eWxlPSIiPiA8L2Rpdj4NCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCnZhciBtYXA7JChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24gKCkge3ZhciBvcHRpb25zID0ge2FjY291bnQ6IiIsY29udGV4dDoiIix6b29tVG9Cb3VuZHM6IGZhbHNlLHRvb2xiYXI6IHRydWUsdG9vbGJhck9wdGlvbnM6IHt6b29tSW46IHRydWUsem9vbU91dDogdHJ1ZSxzdHJlZXRWaWV3OiB0cnVlLGxheWVyczogZmFsc2UsbGVnZW5kOiBmYWxzZSxjbGVhcjogZmFsc2Usc2VhcmNoOiBmYWxzZX0saWRlbnRpZnk6IGZhbHNlLG11bHRpU2VsZWN0OiBmYWxzZSx6b29tRmFjdG9yOiAxNn07DQptYXAgPSBuZXcgbWFjcm9naXMubWFwcy5JY29uTWFwKCJtYXAiLCBvcHRpb25zLCBmdW5jdGlvbigpIHsgbWFwLnpvb21Ub0Z1bGxFeHRlbnQoKTsNCiANCn0pO30pOw0KJCgnIycpLmhpZGUoKTsNCjwvc2NyaXB0Pg0KZAIFDxYCHwBlZAIDD2QWAgIBD2QWAmYPZBYEAhkPZBYCZg9kFgQCAQ9kFgQCAQ8PFgIfAWhkZAIDDw8WAh8ABQNNYXBkZAIDD2QWBAIDD2QWAmYPFgIfAAX3BzxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vbWFwcy9hcGkvanM/c2Vuc29yPXRydWUmbGlicmFyaWVzPWdlb21ldHJ5Ij48L3NjcmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwczovL3d3dy5nb29nbGUuY29tL2pzYXBpIj48L3NjcmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvY2xpZW50L3NjcmlwdHMvbWFwLy9pY29uLW1hcC5qcyI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iLi4vLi4vUGFnZXMvWEMuU3BhdGlhbC9KYXZhc2NyaXB0L1NwYXRpYWwuanMiPjwvc2NyaXB0PjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iL2NsaWVudC9zY3JpcHRzL21hcC8vaWNvbi1tYXAuY3NzIiBtZWRpYT0ic2NyZWVuIj48L2xpbms+PGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIuLi8uLi9BcHBfVGhlbWVzL0ljb24vU3BhdGlhbC5jc3MiIG1lZGlhPSJzY3JlZW4iPjwvbGluaz48ZGl2IGlkPSJtYXAiIGNsYXNzPSJlbWJlZGRlZCIgc3R5bGU9IiI+IDwvZGl2Pg0KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPg0KdmFyIG1hcDskKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbiAoKSB7dmFyIG9wdGlvbnMgPSB7YWNjb3VudDoiIixjb250ZXh0OiIiLHpvb21Ub0JvdW5kczogZmFsc2UsdG9vbGJhcjogdHJ1ZSx0b29sYmFyT3B0aW9uczoge3pvb21JbjogdHJ1ZSx6b29tT3V0OiB0cnVlLHN0cmVldFZpZXc6IHRydWUsbGF5ZXJzOiBmYWxzZSxsZWdlbmQ6IGZhbHNlLGNsZWFyOiBmYWxzZSxzZWFyY2g6IGZhbHNlfSxpZGVudGlmeTogZmFsc2UsbXVsdGlTZWxlY3Q6IGZhbHNlLHpvb21GYWN0b3I6IDE2fTsNCm1hcCA9IG5ldyBtYWNyb2dpcy5tYXBzLkljb25NYXAoIm1hcCIsIG9wdGlvbnMsIGZ1bmN0aW9uKCkgeyBtYXAuem9vbVRvRnVsbEV4dGVudCgpOw0KIA0KfSk7fSk7DQokKCcjJykuaGlkZSgpOw0KPC9zY3JpcHQ+DQpkAgUPFgIfAGVkAh8PZBYCZg8WAh4FVmFsdWVlZGTGRAGT5Mo34/uThuSUaI9uy30Vww==\"
+        />\r\n\r\n\r\n<script src=\"/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_script_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen%3ad469afcf-7bb2-42b0-a0c2-3f036d3832f2%3aea597d4b\"
+        type=\"text/javascript\"></script>\r\n<script type=\"text/javascript\">\r\n//<![CDATA[\r\nif
+        (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework
+        failed to load.');\r\n//]]>\r\n</script>\r\n\r\n<input type=\"hidden\" name=\"__VIEWSTATEGENERATOR\"
+        id=\"__VIEWSTATEGENERATOR\" value=\"FD370D2E\" />\r\n<input type=\"hidden\"
+        name=\"__EVENTVALIDATION\" id=\"__EVENTVALIDATION\" value=\"/wEdAAOpssWjW0nVapfui/cKTR+7nexQA0tUWxhXiF1Lx87GyZtWKg6RvYaBd0w/zXbzv0kMOum6VQSX/6ooZ9SUaQ3ZlJoaTg==\"
+        />\r\n        \r\n        <script type=\"text/javascript\" src=\"../../HttpCombiner.ashx?s=IconJs&t=text/javascript\"></script>\r\n
+        \       <script type=\"text/javascript\">\r\n            jGrowlPosition =
+        \"top-right\";\r\n        </script>\r\n        <div id=\"ctl00_throbber_throbber\"
+        class=\"globalThrobber\">\r\n    <img class=\"throbber\" src=\"../../Common/Common/Image.aspx?rid=throbber.gif\"
+        alt=\"Loading...\" />\r\n</div>\r\n\r\n<script type=\"text/javascript\">\r\n
+        \   $(document).ready(function(){        \r\n        $('.globalThrobber')\r\n
+        \           .ajaxStart(function() {\r\n                if ($('.throbber:visible').length
+        == 0) {\r\n                    $(this).show();\r\n                }\r\n            })
+        \ \r\n            .ajaxStop(function() {\r\n                $(this).hide();\r\n
+        \           })\r\n        ;\r\n    });\r\n</script>\r\n        \r\n\r\n<script
+        type=\"text/javascript\">\r\n    /*This script is designed to alert the user
+        when session timout is reached and redirect to home page*/\r\n    var timer1;\r\n
+        \   window.clearTimeout(timer1);\r\n    var $dialog;\r\n    $(document).ready(function()\r\n
+        \   {\r\n        $dialog = $('<div></div>').html('Your session has expired,
+        you will now be redirected to the home page.').dialog(\r\n        {\r\n            buttons:\r\n
+        \           {   \r\n                'Ok': function()\r\n                {\r\n
+        \                   $(this).dialog('close');\r\n                    window.location
+        = 'https://eplanning.willoughby.nsw.gov.au/Pages/XC.Home/Home.aspx';\r\n                }\r\n
+        \           },\r\n            show: \"fade\",\r\n            hide: \"fade\",\r\n
+        \           resizable: false,\r\n            modal: true,\r\n            autoOpen:
+        false,\r\n            title:  'Session Expired'\r\n        });\r\n    });\r\n
+        \   var sessionTimeout = '10799000';\r\n    function doTimeout()\r\n    {\r\n
+        \       $dialog.dialog('open');\r\n        return false;\r\n    }\r\n    timer1
+        = window.setTimeout('doTimeout()',sessionTimeout);\r\n</script>\r\n        <div
+        id=\"docf\">\r\n            <div id=\"hd\" role=\"banner\">\r\n\r\n                <img
+        src=\"../../Images/WCC/eplanningPortal.jpg\" alt=\"Willoughby Logo\" style=\"height:
+        100px;\" id=\"adminlogo\" />\r\n\r\n                <div class=\"clear adminclear\"></div>\r\n
+        \               <div id=\"mainline\">\r\n                    <div class=\"containerLeft
+        adminbanner splitterLeftMaster noOverflow\">\r\n                        \r\n
+        \                       <div style=\"margin-top: 5px; padding: 3px; padding-left:
+        12px;\" id=\"adminpage\">\r\n                            <h3>Search Applications</h3>\r\n
+        \                       </div>\r\n                    </div>\r\n                    <div
+        class=\"containerRight adminbanner splitterRightMaster noOverflow\">\r\n                        \r\n
+        \                   </div>\r\n                </div>\r\n                <div
+        class=\"clear\"></div>\r\n            </div>\r\n            <div class=\"clear\"></div>\r\n
+        \           <div id=\"bd\" role=\"main\">\r\n                <div id=\"main\">\r\n
+        \                   <div class=\"containerLeft\">\r\n                        <div
+        class=\"containerInner\">\r\n                            <div class=\"padded\">\r\n
+        \                               \r\n    <div class=\"padded\" style=\"padding-left:20px;\">\r\n
+        \       <div class=\"Links LinksGroup\">\r\n  <div id=\"m0\" class=\"LinksTitle\"
+        onclick=\"toggleMenu('0');\">\r\n    <img src=\"../../Image/bullet_arrow_down.aspx\"
+        alt=\"show\" id=\"g0\" style=\"float:left;\" />ePlanning</div>\r\n  <div id=\"i0\"
+        class=\"LinksSection\">\r\n    <a href=\"../../Common/Common/Terms.aspx\"
+        class=\"Links\" target=\"\">Disclaimer</a>\r\n  </div>\r\n</div>\r\n<div class=\"Links
+        LinksGroup\">\r\n  <div id=\"m1\" class=\"LinksTitle\" onclick=\"toggleMenu('1');\">\r\n
+        \   <img src=\"../../Image/bullet_arrow_down.aspx\" alt=\"show\" id=\"g1\"
+        style=\"float:left;\" />Find an Application</div>\r\n  <div id=\"i1\" class=\"LinksSection\">\r\n
+        \   <a href=\"../../Pages/XC.Track/SearchApplication.aspx\" class=\"Links\"
+        target=\"\">By address</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx\"
+        class=\"Links\" target=\"\">By number</a>\r\n  </div>\r\n</div>\r\n<div class=\"Links
+        LinksGroup\">\r\n  <div id=\"m2\" class=\"LinksTitle\" onclick=\"toggleMenu('2');\">\r\n
+        \   <img src=\"../../Image/bullet_arrow_down.aspx\" alt=\"show\" id=\"g2\"
+        style=\"float:left;\" />Find a Property</div>\r\n  <div id=\"i2\" class=\"LinksSection\">\r\n
+        \   <a href=\"../../Pages/XC.Track/SearchProperty.aspx\" class=\"Links\" target=\"\">By
+        address</a>\r\n  </div>\r\n</div>\r\n<div class=\"Links LinksGroup\">\r\n
+        \ <div id=\"m3\" class=\"LinksTitle\" onclick=\"toggleMenu('3');\">\r\n    <img
+        src=\"../../Image/bullet_arrow_down.aspx\" alt=\"show\" id=\"g3\" style=\"float:left;\"
+        />On Exhibition</div>\r\n  <div id=\"i3\" class=\"LinksSection\">\r\n    <a
+        href=\"../../Pages/XC.Track/Exhibitions.aspx\" class=\"Links\" target=\"\">On
+        exhibition</a>\r\n  </div>\r\n</div>\r\n<div class=\"Links LinksGroup\">\r\n
+        \ <div id=\"m4\" class=\"LinksTitle\" onclick=\"toggleMenu('4');\">\r\n    <img
+        src=\"../../Image/bullet_arrow_down.aspx\" alt=\"show\" id=\"g4\" style=\"float:left;\"
+        />Received Applications</div>\r\n  <div id=\"i4\" class=\"LinksSection\">\r\n
+        \   <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=thisweek&amp;k=LodgementDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">This Week</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=lastweek&amp;k=LodgementDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">Last Week</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=thismonth&amp;k=LodgementDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">This Month</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=lastmonth&amp;k=LodgementDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">Last Month</a>\r\n  </div>\r\n</div>\r\n<div
+        class=\"Links LinksGroup\">\r\n  <div id=\"m5\" class=\"LinksTitle\" onclick=\"toggleMenu('5');\">\r\n
+        \   <img src=\"../../Image/bullet_arrow_down.aspx\" alt=\"show\" id=\"g5\"
+        style=\"float:left;\" />Determined Applications</div>\r\n  <div id=\"i5\"
+        class=\"LinksSection\">\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=thisweek&amp;k=DeterminationDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">This Week</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=lastweek&amp;k=DeterminationDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">Last Week</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=thismonth&amp;k=DeterminationDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">This Month</a>\r\n    <a href=\"../../Pages/XC.Track/SearchApplication.aspx?d=lastmonth&amp;k=DeterminationDate&amp;t=DA01,DA01A,DA02A,DA03,DA05,DA06,DA07,DA10,S96,CC01A,CC01B,CC03,CC04,CD01A,CD01B,CD02,CD04,BCERTU,BCERTR,BCERTC,TVPA,TVPA
+        2,TVPA R\" class=\"Links\" target=\"\">Last Month</a>\r\n  </div>\r\n</div>\r\n<script
+        type=\"text/javascript\">\r\n\t\t\t\tif ($.cookie(\"menu_0\")==null) {$.cookie(\"menu_0\",'show',{expires:28,path:'/'});}\r\n\t\t\t\tif
+        ($.cookie(\"menu_0\")=='hide') {$('#i0').hide();$('#g0').attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");}\r\n\t\t\t\r\n\t\t\t\tif
+        ($.cookie(\"menu_1\")==null) {$.cookie(\"menu_1\",'show',{expires:28,path:'/'});}\r\n\t\t\t\tif
+        ($.cookie(\"menu_1\")=='hide') {$('#i1').hide();$('#g1').attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");}\r\n\t\t\t\r\n\t\t\t\tif
+        ($.cookie(\"menu_2\")==null) {$.cookie(\"menu_2\",'show',{expires:28,path:'/'});}\r\n\t\t\t\tif
+        ($.cookie(\"menu_2\")=='hide') {$('#i2').hide();$('#g2').attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");}\r\n\t\t\t\r\n\t\t\t\tif
+        ($.cookie(\"menu_3\")==null) {$.cookie(\"menu_3\",'show',{expires:28,path:'/'});}\r\n\t\t\t\tif
+        ($.cookie(\"menu_3\")=='hide') {$('#i3').hide();$('#g3').attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");}\r\n\t\t\t\r\n\t\t\t\tif
+        ($.cookie(\"menu_4\")==null) {$.cookie(\"menu_4\",'show',{expires:28,path:'/'});}\r\n\t\t\t\tif
+        ($.cookie(\"menu_4\")=='hide') {$('#i4').hide();$('#g4').attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");}\r\n\t\t\t\r\n\t\t\t\tif
+        ($.cookie(\"menu_5\")==null) {$.cookie(\"menu_5\",'show',{expires:28,path:'/'});}\r\n\t\t\t\tif
+        ($.cookie(\"menu_5\")=='hide') {$('#i5').hide();$('#g5').attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");}\r\n\t\t\t\r\n\t\t\tfunction
+        toggleMenu(id) {\r\n\t\t\tif ($.cookie('menu_' + id)=='hide') {\r\n\t\t\t$.cookie('menu_'
+        + id,'show',{expires:28,path:'/'});\r\n\t\t\t$('#i' + id).slideDown('slow');\r\n\t\t\t$('#g'
+        + id).attr(\"src\", \"../../Image/bullet_arrow_down.aspx\");\r\n\t\t\t} else
+        {\r\n\t\t\t$.cookie('menu_' + id,'hide',{expires:28,path:'/'});\r\n\t\t\t$('#i'
+        + id).slideUp('slow');\r\n\t\t\t$('#g' + id).attr(\"src\", \"../../Image/bullet_arrow_right.aspx\");\r\n\t\t\t}\r\n\t\t\t}\r\n\t\t\t
+        </script> \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    </div>\r\n\r\n                            </div>\r\n
+        \                       </div>\r\n                    </div>\r\n                    <div
+        class=\"containerRight\">\r\n                        <div class=\"containerInner\">\r\n
+        \                           <div class=\"padded\">\r\n                                \r\n
+        \                               \r\n    <div class=\"padded\">\r\n        <div
+        id=\"ctl00_ctMain_pnlMain\">\r\n\t\r\n            \r\n<script type=\"text/javascript\">\r\n
+        \   $(document).ready(function(){\r\n        $(\".application\").autocomplete({\r\n
+        \           delay:300,\r\n            minLength:1,\r\n\t\t    source: function(request,
+        response){\r\n                $.ajax({\r\n                    type:'POST',\r\n
+        \                   url:'../../Common/Services/AutoComplete.aspx/GetAutoCompletePairList',\r\n
+        \                   data: '{\"sql\":\"~/Pages/XC.Track/Sql/ApplicationSearchXService.sql\",\"conn\":\"'
+        + 'Pathway' + '\",\"term\":\"' + request.term + '\"}',\r\n                    contentType:
+        \"application/json; charset=utf-8\",\r\n                    dataType: \"json\",\r\n
+        \                   success: function (data) {\r\n                        data
+        = data.d;\r\n                        response(data);\r\n                    }\r\n
+        \               });},\r\n            select: function (event, ui){\r\n                $('#loading').show();\r\n
+        \               $('.application').val(ui.item.label);\r\n                switch
+        (ui.item.value.substr(0,3)) {\r\n                    case 'aid': window.location
+        = 'SearchApplication.aspx?id=' + ui.item.value.substr(4); break;\r\n                    case
+        'pid': window.location = 'SearchApplication.aspx?pid=' + ui.item.value.substr(4)
+        + '&a=' + ui.item.label; break;\r\n                    default:window.location
+        = 'SearchApplication.aspx';\r\n                }\r\n                return
+        false;\r\n            },\r\n            focus: function (event, ui) {\r\n
+        \               $('.application').val(ui.item.label);\r\n                return
+        false;\r\n            }\r\n\t    });\r\n    });\r\n</script>\r\n\r\n<div id=\"ctl00_ctMain_search_pnlSearch\"
+        class=\"MainPanel\">\r\n\t\t\r\n    <h2>Application Search</h2>\r\n    <em
+        style=\"color:#50555a;\">Start entering the street address or application
+        number (year/number) eg. 2016/12.<br />Select the relevant option from the
+        drop down list below.</em>\r\n    <br/>\r\n    <input name=\"ctl00$ctMain$search$txtSearch\"
+        type=\"text\" id=\"ctl00_ctMain_search_txtSearch\" class=\"application\" />\r\n
+        \   <input type=\"submit\" name=\"ctl00$ctMain$search$btnSearch\" value=\"Search\"
+        id=\"ctl00_ctMain_search_btnSearch\" class=\"buttonText buttonModify\" />\r\n
+        \   <img id=\"loading\" src=\"../../Common/Common/Image.aspx?rid=loading03.gif\"
+        alt=\"loading\" style=\"display:none;\" />\r\n\t<br/><br />\r\n    <em style=\"color:#50555a;\">Note:
+        Information on applications is available from 2004. <br />Plans are published
+        for a period of six months from lodgement while documents are available for
+        three years.<br />\r\n    To access information not available on this site
+        you will need to make a request to view Council  files.<br /> </em>\r\n    <br
+        /><br />\r\n\r\n\t</div>\r\n\r\n<div>\r\n    <br /><br /><br />\r\n    \r\n</div>\r\n\r\n\r\n
+        \       \r\n</div>\r\n        <div id=\"ctl00_ctMain_d1\" class=\"shift\">\r\n
+        \           \r\n        </div>\r\n    </div>    \r\n\r\n                            </div>\r\n
+        \                       </div>\r\n                    </div>\r\n                </div>\r\n
+        \           </div>\r\n            \r\n\r\n\r\n            <div class=\"footer\"
+        style=\"padding: 20px; color: #FFF;\">\r\n                <div class=\"container\"
+        style=\"padding-left: 15px; padding-right: 15px;\">\r\n                    <strong>&copy;
+        Copyright <a href=\"http://www.willoughby.nsw.gov.au/\" target=\"_blank\">Willoughby
+        City Council</a> - ABN</strong> 47 974 826 099\r\n             <div style=\"float:
+        right;\">\r\n                 <a href=\"http://www.willoughby.nsw.gov.au/legal\"
+        target=\"_blank\">Legal</a> |\r\n             <a href=\"mailto:email@willoughby.nsw.gov.au\"
+        target=\"_blank\">Email</a>\r\n             </div>\r\n                </div>\r\n
+        \           </div>\r\n\r\n        </div>\r\n        <script type=\"text/javascript\"
+        src=\"../../Common/Javascript/final.js\"></script>\r\n        <script type=\"text/javascript\"
+        src=\"../../Common/User/User.js\"></script>\r\n        <script type=\"text/javascript\">\r\n
+        \           $(document).ready(function () {\r\n                document.title
+        = document.title + ' - TechnologyOne';\r\n            });\r\n        </script>\r\n
+        \   </form>\r\n</body>\r\n</html>"
+    http_version: 
+  recorded_at: Tue, 14 May 2019 14:00:00 GMT
+- request:
+    method: get
+    uri: https://eplanning.willoughby.nsw.gov.au/pages/xc.track/SearchApplication.aspx?d=last90days&k=LodgementDate&o=xml&t=da01,da01a,da02a,da03,da05,da06,da07,da10,s96,cc01a,cc01b,cc03,cc04,cd01a,cd01b,cd02,cd04,bcertu,bcertr,bcertc,tvpa,tvpa%202,tvpa%20r
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.6 Ruby/2.5.1p57 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Cookie:
+      - ASP.NET_SessionId=ykbf3uncwein2bciefsmi1s2
+      Host:
+      - eplanning.willoughby.nsw.gov.au
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
       code: 200
       message: OK
     headers:
@@ -32,12 +546,10 @@ http_interactions:
       - private
       Content-Type:
       - application/xml; charset=utf-8
-      Set-Cookie:
-      - ASP.NET_SessionId=1a0nxp2xas2xa5taviqt44vp; path=/; HttpOnly
       X-Frame-Options:
       - SAMEORIGIN
       Date:
-      - Mon, 10 Jun 2019 06:17:10 GMT
+      - Mon, 10 Jun 2019 06:17:50 GMT
       Content-Length:
       - '2262877'
     body:
